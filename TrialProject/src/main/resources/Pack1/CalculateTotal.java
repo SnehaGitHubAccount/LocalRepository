@@ -16,8 +16,6 @@ import javax.servlet.http.HttpServletResponse;
 
 @WebServlet("/CalculateTotal")
 public class CalculateTotal extends HttpServlet {
-	
-
 	private Connection con;
 
 	protected void doPost(HttpServletRequest request,
@@ -36,7 +34,7 @@ public class CalculateTotal extends HttpServlet {
 			String insertTableSQL = "INSERT INTO product.`product_entry` (product_id,product_name,quantity,total_cost) VALUES(?,?,?,?)";
 			PreparedStatement preparedStatement = con.prepareStatement(insertTableSQL);
 			
-						System.out.println("----jjjkkk");
+					System.out.print("Hello");
 			for (int i=0; i<products.length; i++)
 			{
 				System.out.println(products[i] + " " + quantites[i]);
@@ -58,6 +56,7 @@ public class CalculateTotal extends HttpServlet {
 			{
 				
 				System.out.println("no");
+				
 				
 			}
 			
