@@ -39,7 +39,7 @@ public class CalculateTotal extends HttpServlet {
 			{
 				System.out.println(products[i] + " " + quantites[i]);
 				System.out.println("hhhhhh");
-				preparedStatement.setInt(1,4);
+				preparedStatement.setInt(1,8);
 				preparedStatement.setString(2, products[i]);
 				preparedStatement.setInt(3, Integer.parseInt(quantites[i]));
 				preparedStatement.setInt(4,Integer.parseInt(totalamount[i]));
